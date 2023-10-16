@@ -58,3 +58,5 @@ io.on('connection', (socket) => {
     io.emit("getUsers", users)
   })
 })
+
+export default app
