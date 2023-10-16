@@ -8,11 +8,7 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
-const io = require("socket.io")(8900, {
-  cors: {
-    origin: "*",
-  }
-})
+const io = require("socket.io")(8900)
 
 const getUsers = async () => await User.find()
 
